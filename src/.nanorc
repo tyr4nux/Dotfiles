@@ -1,0 +1,36 @@
+set atblanks
+set autoindent
+set boldtext
+set cutfromcursor
+set emptyline
+set indicator
+set linenumbers
+set matchbrackets "(<[{)>]}"
+set softwrap
+set speller "hunspell"
+set tabsize 4
+set tabstospaces
+set whitespace ">."
+set zap
+
+set titlecolor bold,grey
+set promptcolor bold,yellow
+set statuscolor bold,green
+set errorcolor bold,red
+set spotlightcolor black,lightyellow
+set selectedcolor white,magenta
+set stripecolor ,grey
+set scrollercolor white,grey
+set numbercolor grey
+set keycolor magenta
+set functioncolor grey
+
+include /usr/share/nano/*.nanorc
+
+bind ^C copy main
+bind ^V paste all
+bind ^R replace main
+bind ^T gotoline main
+bind ^E execute main
+bind ^Z undo main
+bind ^Y redo main

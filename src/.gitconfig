@@ -1,0 +1,19 @@
+[commit]
+    gpgSign = false
+
+[core]
+    editor = nano
+
+[credential]
+    helper = store
+
+[init]
+    defaultBranch = main
+    defaultObjectFormat = sha1
+
+[log]
+    showSignature = false
+
+[user]
+    email = tyr4nux@localhost
+    name = tyr4nux

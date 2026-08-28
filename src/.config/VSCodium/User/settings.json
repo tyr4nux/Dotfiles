@@ -1,0 +1,49 @@
+{
+    // Privacy
+    "chat.disableAIFeatures": true,
+    "telemetry.telemetryLevel": "off",
+
+    // Font
+    "editor.fontFamily": "'JetBrains Mono'",
+    "editor.fontLigatures": false,
+    "editor.fontSize": 14,
+    "terminal.integrated.fontFamily": "'JetBrainsMono Nerd Font'",
+
+    // UI
+    "breadcrumbs.symbolPath": "off",
+    "editor.minimap.maxColumn": 80,
+    "editor.minimap.showSlider": "always",
+    "editor.scrollbar.verticalScrollbarSize": 7,
+    "workbench.iconTheme": "material-icon-theme",
+    "explorer.incrementalNaming": "smart",
+    "window.title": "${dirty}${activeEditorShort}${separator}${rootName}${separator}${profileName}",
+    "workbench.layoutControl.enabled": false,
+    "workbench.sideBar.location": "right",
+    "workbench.tree.renderIndentGuides": "always",
+    "workbench.view.alwaysShowHeaderActions": true,
+
+    // Code formatting
+    "editor.formatOnSave": true,
+    "editor.insertSpaces": true,
+    "editor.stickyScroll.enabled": false,
+    "editor.tabSize": 4,
+    "editor.wordWrap": "on",
+
+    // Code Runner
+    "code-runner.enableAppInsights": false,
+    "code-runner.runInTerminal": true,
+
+    // C/C++
+    "[c]": {
+        "editor.defaultFormatter": "llvm-vs-code-extensions.vscode-clangd",
+        "editor.formatOnSave": true
+    },
+    "[cpp]": {
+        "editor.defaultFormatter": "llvm-vs-code-extensions.vscode-clangd",
+        "editor.formatOnSave": true
+    },
+
+    // Python
+    "basedpyright.analysis.typeCheckingMode": "standard",
+    "basedpyright.importStrategy": "useBundled"
+}

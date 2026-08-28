@@ -1,0 +1,5 @@
+[general]
+colors = true
+
+[input]
+ignorewordlistcomments = true

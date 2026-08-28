@@ -1,0 +1,50 @@
+# Get editor completions based on the config schema
+"$schema" = 'https://starship.rs/config-schema.json'
+
+format = '''
+$directory$git_branch${env_var.VIRTUAL_ENV_PROMPT}$jobs$cmd_duration$username$character
+'''
+
+[cmd_duration]
+min_time = 5000
+style = 'bold purple'
+format = '[$duration]($style) '
+
+[directory]
+read_only = ' 󰉐'
+truncation_length = 0
+truncate_to_repo = false
+
+[env_var.VIRTUAL_ENV_PROMPT]
+variable = 'VIRTUAL_ENV_PROMPT'
+symbol = ' '
+style = 'bold yellow'
+format = '[$symbol$env_value]($style) '
+
+[git_branch]
+symbol = ' '
+style = 'bold #ff8000'
+format = '[$symbol$branch(:$remote_branch)]($style) '
+
+[jobs]
+number_threshold = 1
+
+[os.symbols]
+Android = ' '
+Arch = ' '
+Debian = ' '
+Fedora = ' '
+Ios = '󰀷 '
+Kali = ' '
+Linux = ' '
+Macos = ' '
+Mint = ' '
+Ubuntu = ' '
+Windows = '󰍲 '
+
+[username]
+style_root = 'red'
+format = '[$user]($style) '
+
+[username.aliases]
+root = ''
