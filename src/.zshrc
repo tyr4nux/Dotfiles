@@ -76,7 +76,7 @@ help() {
 }
 
 mkt() {
-    mkdir {content,exploits,nmap,scripts}
+    mkdir {content,exploits,recon}
 }
 
 rmk() {
@@ -85,9 +85,11 @@ rmk() {
 
 rot13() {
   if [[ -f "$1" ]]; then
-    tr 'A-Za-z0-9' 'N-ZA-Mn-za-m5-90-4' < "$1"
+    tr 'A-Za-z' 'N-ZA-Mn-za-m' < "$1"
+  elif [[ -n "$1" ]]; then
+    echo "$*" | tr 'A-Za-z' 'N-ZA-Mn-za-m'
   else
-    echo "$*" | tr 'A-Za-z0-9' 'N-ZA-Mn-za-m5-90-4'
+    tr 'A-Za-z' 'N-ZA-Mn-za-m'
   fi
 }
 
@@ -108,5 +110,5 @@ source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zs
 source <(fzf --zsh)
 
 # Starship prompt
-#PROMPT_EOL_MARK=''
+PROMPT_EOL_MARK=''
 eval "$(starship init zsh)"
