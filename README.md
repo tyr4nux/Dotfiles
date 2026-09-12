@@ -6,7 +6,7 @@ Installation:
 
 ```bash
 git clone https://github.com/tyr4nux/Dotfiles.git ~/.dotfiles
-cd dotfiles
+cd ~/.dotfiles
 ./install.sh
 ```
 
