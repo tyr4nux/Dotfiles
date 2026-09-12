@@ -4,9 +4,6 @@
 [core]
     editor = nano
 
-[credential]
-    helper = store
-
 [init]
     defaultBranch = main
     defaultObjectFormat = sha1

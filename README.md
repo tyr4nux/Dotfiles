@@ -68,11 +68,12 @@ zram-size = min(ram / 2, 16384)
 <details>
 <summary><h2>🔗 Git</h2></summary>
 
-**📂 File:** `~/.git-credentials`
+Generate SSH keys:
 
-```text
-https://USER:TOKEN@codeberg.org
-https://USER:TOKEN@github.com
+```bash
+cd ~/.ssh
+ssh-keygen -C "" -t ed25519 -f AUR
+ssh-keygen -C "" -t ed25519 -f GitHub
 ```
 
 </details>
