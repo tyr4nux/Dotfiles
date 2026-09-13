@@ -180,7 +180,7 @@ genSymLink "$REPO_DIR/src/.radare2rc" "$HOME/.radare2rc"
 genSymLink "$REPO_DIR/src/.wgetrc" "$HOME/.wgetrc"
 
 # SSH
-cpTemplate "$REPO_DIR/src/.ssh/config.tmpl" "$HOME/.ssh/config"
+cpTemplate "$REPO_DIR/src/.ssh/config.template" "$HOME/.ssh/config"
 
 # Starship
 genSymLink "$REPO_DIR/src/.config/starship.toml" "$HOME/.config/starship.toml"
