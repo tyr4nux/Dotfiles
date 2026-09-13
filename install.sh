@@ -169,10 +169,6 @@ genSymLink "$REPO_DIR/src/.config/kitty/kitty.conf" "$HOME/.config/kitty/kitty.c
 # Nano
 genSymLink "$REPO_DIR/src/.nanorc" "$HOME/.nanorc"
 
-# Neovim
-#genSymLink "$REPO_DIR/src/.config/nvim" "$HOME/.config/nvim"
-#genSymLink "$REPO_DIR/src/.config/nvim" "/root/.config/nvim"
-
 # Pentesting tools
 genSymLink "$REPO_DIR/src/.ffufrc" "$HOME/.ffufrc"
 genSymLink "$REPO_DIR/src/.gdbinit" "$HOME/.gdbinit"
