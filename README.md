@@ -96,6 +96,14 @@ set titlecolor bold,white,red
 <details>
 <summary><h2>📦 Pacman</h2></summary>
 
+Save fastest servers:
+
+```bash
+rate-mirrors --protocol https --entry-country US --max-mirrors-to-output 5 --disable-comments arch --fetch-first-tier-only | sudo tee /etc/pacman.d/mirrorlist
+
+rate-mirrors --protocol https --entry-country US --max-mirrors-to-output 5 --disable-comments blackarch | sudo tee /etc/pacman.d/blackarch-mirrorlist
+```
+
 **📂 File:** `/etc/pacman.conf`
 
 ```ini
@@ -123,14 +131,6 @@ Include = /etc/pacman.d/mirrorlist
 
 [blackarch]
 Include = /etc/pacman.d/blackarch-mirrorlist
-```
-
-Save fastest servers:
-
-```bash
-rate-mirrors --protocol https --entry-country US --max-mirrors-to-output 5 --disable-comments arch --fetch-first-tier-only | sudo tee /etc/pacman.d/mirrorlist
-
-rate-mirrors --protocol https --entry-country US --max-mirrors-to-output 5 --disable-comments blackarch | sudo tee /etc/pacman.d/blackarch-mirrorlist
 ```
 
 </details>
