@@ -72,15 +72,15 @@ extractPorts() {
 }
 
 help() {
-    "$@" --help 2>&1 | bat --plain --language=help
+  "$@" --help 2>&1 | bat --plain --language=help
 }
 
 mkt() {
-    mkdir {content,exploits,recon}
+  mkdir {content,exploits,recon}
 }
 
 rmk() {
-    shred -zun 10 -- "$1"
+  shred -zun 10 -- "$1"
 }
 
 rot13() {
@@ -94,11 +94,11 @@ rot13() {
 }
 
 setTarget() {
-    local file="$HOME/.config/waybar/target.txt"
-    touch "$file"
-    echo "< $(head -n 1 $file)"
-    echo -n "$1" > "$file"
-    echo "> $1"
+  local file="$HOME/.config/ip-tools/target.txt"
+  touch -- "$file"
+  echo "< $(head -n 1 $file)"
+  echo -n "$1" > "$file"
+  echo "> $1"
 }
 
 # Zsh plugins

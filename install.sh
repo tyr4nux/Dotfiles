@@ -163,6 +163,9 @@ genSymLink "$REPO_DIR/src/.clang-format" "$HOME/.clang-format"
 # Git
 genSymLink "$REPO_DIR/src/.gitconfig" "$HOME/.gitconfig"
 
+# IPs
+genSymLink "$REPO_DIR/src/.config/ip-tools" "$HOME/.config/ip-tools"
+
 # Kitty
 genSymLink "$REPO_DIR/src/.config/kitty/kitty.conf" "$HOME/.config/kitty/kitty.conf"
 
@@ -184,9 +187,6 @@ genSymLink "$REPO_DIR/src/.config/starship.toml" "/root/.config/starship.toml"
 
 # VSCodium
 genSymLink "$REPO_DIR/src/.config/VSCodium/User/settings.json" "$HOME/.config/VSCodium/User/settings.json"
-
-# Waybar
-genSymLink "$REPO_DIR/src/.config/waybar/ip.sh" "$HOME/.config/waybar/ip.sh"
 
 # Zsh
 genSymLink "$REPO_DIR/src/.zshrc" "$HOME/.zshrc"
