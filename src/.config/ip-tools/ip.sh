@@ -3,9 +3,9 @@ get_host() {
 }
 
 get_target() {
-  local file="$(dirname "$0")/target.txt"
+  local file="$(dirname -- "$0")/target.txt"
   if [[ -f "$file" ]]; then
-    head -n 1 "$file" | tr -d '\n'
+    head -n 1 -- "$file" | tr -d '\n'
   fi
 }
 
@@ -15,17 +15,17 @@ get_vpn() {
 
 copy_host() {
   get_host | wl-copy
-  notify-send -a "$(basename "$0")" -u low -t 2500 'Copied host IP'
+  notify-send -a "$(basename -- "$0")" -u low -t 2500 'Copied host IP'
 }
 
 copy_target() {
   get_target | wl-copy
-  notify-send -a "$(basename "$0")" -u low -t 2500 'Copied target IP'
+  notify-send -a "$(basename -- "$0")" -u low -t 2500 'Copied target IP'
 }
 
 copy_vpn() {
   get_vpn | wl-copy
-  notify-send -a "$(basename "$0")" -u low -t 2500 'Copied VPN IP'
+  notify-send -a "$(basename -- "$0")" -u low -t 2500 'Copied VPN IP'
 }
 
 disp_ip() {

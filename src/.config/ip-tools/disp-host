@@ -1,5 +1,5 @@
 #!/bin/bash
 
-source "$(dirname "$0")/ip.sh"
+source "$(dirname -- "$0")/ip.sh"
 
 disp_host
