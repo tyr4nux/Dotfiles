@@ -1,3 +1,5 @@
+include /usr/share/nano/*.nanorc
+
 set atblanks
 set autoindent
 set boldtext
@@ -24,8 +26,6 @@ set scrollercolor white,grey
 set numbercolor grey
 set keycolor magenta
 set functioncolor grey
-
-include /usr/share/nano/*.nanorc
 
 bind ^C copy main
 bind ^V paste all
