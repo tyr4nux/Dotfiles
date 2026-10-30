@@ -76,7 +76,7 @@ help() {
 }
 
 mkt() {
-  mkdir {content,exploits,recon}
+  mkdir {content,exploits,recon,scripts}
 }
 
 rmk() {
