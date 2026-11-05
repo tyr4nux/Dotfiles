@@ -1,3 +1,4 @@
 e asm.comments = true
+e asm.syntax = intel
 e emu.str = true
 e scr.utf8 = true
