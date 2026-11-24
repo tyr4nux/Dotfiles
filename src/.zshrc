@@ -14,8 +14,9 @@ setopt INC_APPEND_HISTORY
 setopt SHARE_HISTORY
 
 # Tool history
-export GDBHISTFILE=/dev/null
-export NC_HISTORY=/dev/null
+export GDBHISTFILE=''
+export LESSHISTFILE=-
+export NODE_REPL_HISTORY=''
 export PYTHON_HISTORY=/dev/null
 export SQLITE_HISTORY=/dev/null
 
@@ -54,6 +55,7 @@ alias la='/usr/bin/lsd -a --group-directories-first'
 alias ll='/usr/bin/lsd -l --group-directories-first'
 alias lla='/usr/bin/lsd -la --group-directories-first'
 alias ls='/usr/bin/lsd --group-directories-first'
+alias rlwrap='/usr/bin/rlwrap -H /dev/null -n'
 alias wget='/usr/bin/wget --no-hsts'
 
 # Functions
